@@ -1,0 +1,52 @@
+using UnityEngine;
+using System.Collections;
+
+public class hgjt : MonoBehaviour {
+
+int bloodCaffineLevel = 412;
+bool tierd = true;
+float dangerLevel = 101f;
+bool boyfriendLying = true;
+int lieSeverity = 5;
+int money = 30;
+
+
+	//example of if else, int, string, <= and >=
+	void Start () {
+		if (bloodCaffineLevel <= 100) {
+			Debug.Log ("Drink more coffee");
+		} else if (bloodCaffineLevel >= 400) {
+			Debug.Log ("No more caffine");
+		} else {
+			Debug.Log ("adequate dosage");
+		}
+
+		//example of bool and ==
+
+		if (tierd == true) {
+			Debug.Log ("sleep");
+		}
+		//example of >, float
+
+		if (dangerLevel > 100) {
+			Debug.Log ("youre safe");
+		}
+
+		//example of !=, <
+		if (boyfriendLying != true) {
+			Debug.Log ("trust");
+		} else if (lieSeverity < 10) {
+			Debug.Log ("still trust");
+
+			//3 more examples to = 10
+			if (money >= 50) {
+				Debug.Log ("you're broke");
+			} else if (money < 1000) {
+				Debug.Log ("youre ok");
+			} else {
+				Debug.Log ("im out of ideas for examples");
+			}
+		}
+		}
+
+	}
